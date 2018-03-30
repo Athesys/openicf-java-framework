@@ -63,12 +63,14 @@
         <dependency>
             <groupId>org.forgerock.commons</groupId>
             <artifactId>forgerock-util</artifactId>
+            <version>21.0.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>org.forgerock.commons.guava</groupId>
-            <artifactId>forgerock-guava-collect</artifactId>
-            <version>18.0.4</version>
-        </dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<!-- If you need support for JDK 1.7 or Android, use the Android flavor -->
+			<version>23.2-android</version>
+		</dependency>
 
        <dependency>
             <groupId>org.glassfish.grizzly</groupId>
