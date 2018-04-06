@@ -34,7 +34,6 @@
   </parent>
 
   <artifactId>connector-framework-contract</artifactId>
-  <version>1.1.2.0<</version>
 
   <dependencies>
     <dependency>
@@ -63,12 +62,14 @@
     <dependency>
       <groupId>com.google.inject</groupId>
       <artifactId>guice</artifactId>
+      <version>4.2.0</version>
     </dependency>
 
     <!-- Test Dependencies -->
     <dependency>
       <groupId>org.apache.maven.shared</groupId>
       <artifactId>maven-verifier</artifactId>
+      <version>1.6</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -81,6 +82,13 @@
         <includes>
           <include>LICENSE</include>
         </includes>
+      </resource>
+      <resource>
+          <filtering>false</filtering>
+          <directory>${basedir}/src/main/resources/</directory>
+          <includes>
+              <include>bootstrap.groovy</include>
+          </includes>
       </resource>
     </resources>
   </build>
